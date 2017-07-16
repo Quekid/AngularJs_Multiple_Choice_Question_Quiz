@@ -1,0 +1,72 @@
+/** Element selectors arranged in alphabetical order*/
+body{ 
+  font-family: Sans-Serif; 
+}
+h2{
+  color: lightseagreen;
+  text-align: center;
+  margin: 20px;
+}
+pre{
+  border-color: #ffffff;
+  background-color: #ffffff; 
+  overflow-x: hidden;
+}
+input{
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+/** class selectors arranged in alphabetical order.**/
+.alert{
+  padding:5px;
+  margin:0px 5px;
+}
+.box{
+  margin: 10px;
+  padding: 10px;
+}
+.hr-green:hover{
+ color:#20b28a;
+ cursor: pointer;
+}
+.lg-font{
+  font-size: 25px;
+}
+.minor-Heading{
+  font-weight: bold;
+  color: lightseagreen;
+  margin: 5px;
+  font-size: 16px;
+}
+.question-wrapper{
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 10px;
+  min-height: 200px;
+}
+.rm-left-margin-md{
+  margin-left:-100px;
+}
+.sm-margin {
+  margin:5px;
+}
+.text-lightseagreen{
+  color: lightseagreen;
+}
+.wrapper{
+  margin: 10px auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+}
+.top-padding-sm{
+  padding-top: 10px;
+}
+
+/** icon size **/
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+

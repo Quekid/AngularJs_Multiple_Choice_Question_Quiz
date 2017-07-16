@@ -1,0 +1,88 @@
+{
+  "questions": [{
+    "questionName": "What will be the output of following code?<br><pre>console.log(-'3'-'6')</pre>",
+    "answerOptions":["There will be an error",-9,"-'3'-'9'",-36],
+    "answer": "-9"
+  },{
+    "questionName":"Can we pass object as a an argument in javascript function?",
+    "answerOptions":["No","Yes"],
+    "answer":"Yes"
+  },{
+    "questionName":"What will be the outut of the fallowing code?<br><pre>console.log('' == false)</pre>",
+    "answerOptions":[1, 0, true, false],
+    "answer":true
+  },{
+    "questionName" : "Which of the following method is used to remove first element from an array in JavaScript?",
+    "answerOptions": ["pop()","shift()","unshift()","remove()"],
+    "answer": "pop()"
+  },{
+    "questionName" : "Which of the following method is used to add an element at zero index of an array in JavaScript?",
+    "answerOptions": ["pop()","shift()","unshift()","remove()"],
+    "answer": "unshift()"
+  },{
+    "questionName" : "What will be the output of the fallowing code?<br><pre>console.log((0.1+0.2) == 0.3);</pre>",
+    "answerOptions":[true,false],
+    "answer": false
+  },{
+    "questionName" : "What will be the output of the fallowing code?<br><pre>console.log('BOB'.split('').reverse().join(''));</pre>",
+    "answerOptions":["undefined","BOB","B O B","There will be an error"],
+    "answer": "BOB"
+  },{
+    "questionName" : "What is the method used to create an element in the HTML DOM?",
+    "answerOptions":["createDOMelement()","createElement()","createDOMElement()","None of the mentioned"],
+    "answer": "createElement()"
+  },{
+    "questionName" : "Which of the following are examples of closures?",
+    "answerOptions":["Objects","Variables","Functions","All of the mentioned"],
+    "answer": "All of the mentioned"
+  },{
+    "questionName" : "If you have var y = 1, x = y = typeof x; What is the value of x?",
+    "answerOptions":["1","undefined","number","None of the mentioned"],
+    "answer": "undefined"
+  },{
+    "questionName" : "What is the value of typeof null",
+    "answerOptions":["null","undefined","object","None of the mentioned"],
+    "answer": "object"
+  },{
+    "questionName" : "What will be the output of the fallowing code?<br><pre>console.log(-5%2);</pre>",
+    "answerOptions":["0","1","-1","2"],
+    "answer": "-1"
+  },{
+    "questionName" : "Which built-in method returns the character at the specified index?",
+    "answerOptions":["getChar()","charAt()","char()","charcterAt()"],
+    "answer": "charAt()"
+  },{
+    "questionName" : "Which identifier is used to represent a web browser window or frame?",
+    "answerOptions":["frames","window","location","frame"],
+    "answer": "window"
+  },{
+    "questionName" : "The method or operator used to identify the array is?",
+    "answerOptions":["isarrayType()","==","===","typeof"],
+    "answer": "typeof"
+  },{
+    "questionName" : "What is the difference between '==' and '===' ?",
+    "answerOptions":["Both are same","'==' evaluate equality & '===' evaluates unequality", "'==' evaluates equality of the value, while '===' evaluates  equality of type and value","'==' evaluates equality in JavaScript & we dont use '===' in JavaScript"],
+    "answer": "'==' evaluates equality of the value, while '===' evaluates  equality of type and value"
+  },{
+    "questionName" : "What would  '1'+2+3 ?",
+    "answerOptions":["15","123", "33","None of these"],
+    "answer": "123"
+  },{
+    "questionName" : "What will be the output of the fallowing code?<br><pre> var x ; console.log(x === undefined);</pre>",
+    "answerOptions":[true, "undefined", false, "None of these"],
+    "answer": true
+  },{
+    "questionName" : "You can redirect the webpage in JavaScript by using one of the following method",
+    "answerOptions":["window.reload", "window.location", "page.location", "url.newlocation"],
+    "answer": "window.location"
+  },{
+    "questionName" : "Which of these is not a method of the Math object?",
+    "answerOptions":["atan()", "atan2()", "eval()", "acos()"],
+    "answer": "eval()"
+  }],
+  "userAnswers":[]
+}
+
+
+
+
