@@ -1,0 +1,6 @@
+{
+  "testName": "JavaScript Test",
+  "testDescription": "Test your knowledge of programming in the JavaScript language.",
+  "testRules": ["All questions are mandatory.","Total number of questions : 20", "Test duration: 20min"]
+}
+

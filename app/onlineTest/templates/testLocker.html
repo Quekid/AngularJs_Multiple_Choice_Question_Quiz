@@ -1,0 +1,18 @@
+<!-- Test Locker Template -->
+<div class="container">
+  <h2>Welcome!</h2>
+  <div class="wrapper text-center" ng-class="{'top-padding-sm':  isError}">
+    <div class="alert alert-danger" ng-show="isError">
+      <strong>{{errorMessage}}!</strong> 
+   </div>
+    <div class="box">
+      <div class="minor-heading text-center">Please Entry Your Name</div>
+    </div>
+    <form name="userForm">
+      <div class="box">
+        <input type="text" name="userName" ng-model="userName" required>
+      </div>
+      <a class="btn btn-default btn-sm" ng-disabled="userForm.userName.$invalid" ng-click="unlockLoacker()">Let's Start.</a>
+    </form>
+  </div>
+</div>

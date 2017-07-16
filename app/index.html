@@ -1,0 +1,46 @@
+<!DOCTYPE html">
+<html lang="en">
+<!-- Head and title -->
+
+<head>
+  <title>Online multiple question quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Libraries and external css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- Body -->
+<body ng-app="onlineTest" ng-init="locker=true;userName=null">
+  <test-locker ng-if="locker"></test-locker>
+  <div ui-view ng-if="!locker"></div>
+</body>
+
+<!-- Scripts and libraries -->
+<script src="assets/libs/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.1/angular-sanitize.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.min.js"></script>
+
+<!-- Online Test module -->
+<script src="onlineTest/trigger.js"></script>
+
+<!-- Directive -->
+<script src="onlineTest/directive/locker.directive.js"></script>
+<!-- Service -->
+<script src="onlineTest/service/testDetail.service.js"></script>
+<script src="onlineTest/service/testDelivery.service.js"></script>
+<!-- controllers -->
+<script src="onlineTest/controller/testLaunch.controller.js"></script>
+<script src="onlineTest/controller/testDelivery.controller.js"></script>
+<script src="onlineTest/controller/testResult.controller.js"></script>
+
+<!-- Application -->
+<script src="app/trigger.js"></script>
+<script src="app/app.js"></script>
+
+</html>

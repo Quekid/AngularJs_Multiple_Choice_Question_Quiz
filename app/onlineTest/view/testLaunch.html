@@ -1,0 +1,19 @@
+<!-- welcom view for the test -->
+<div class="container">
+  <h2 ng-bind="'Welcome '+ candidateName"></h2>
+  <div class="wrapper">
+    <div class="minor-Heading" ng-bind="testDetails.testName"></div>
+    <div class="box" ng-bind="testDetails.testDescription"></div>
+    <ul>
+      <li ng-repeat="rule in testDetails.testRules">
+        <span ng-bind="rule"></span>
+      </li>
+    </ul>
+    <div class="text-center">
+      <spnan class="hr-green text-lightseagreen" ui-sref="testDelivery">
+      <span class="glyphicon glyphicon-play-circle gi-4x" aria-hidden="true"></span><br>
+      <span class="hr-green minor-Heading">Start</span>
+      </spnan>
+    </div>
+  </div>
+</div>

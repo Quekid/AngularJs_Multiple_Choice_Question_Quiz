@@ -1,0 +1,26 @@
+<!-- Test Result View -->
+<h2>Test Result</h2>
+<div class="container">
+  <div class="box lg-font text-lightseagreen">
+    <span class="glyphicon glyphicon-home pull-left hr-green" ui-sref="testLaunch"></span>
+    <span class="minor-Heading pull-left hr-green" ui-sref="testLaunch">{{candidateName}}</span><br>
+  </div>
+  <div class="wrapper">
+    <div class="minor-heading" ng-bind="'Percentage '+scoreInPercentage+'%'">
+    </div>
+    <div class="minor-heading" ng-bind="'Correct Questions: ' + score"></div>
+    <div class="minor-heading" ng-bind="'Wrong Answers: '+ wrongAnswers"></div>
+    <div class="minor-heading" ng-bind="'Questions not attempted: '+(totalQuestions - (score+wrongAnswers))"></div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" style="width:{{scoreInPercentage}}%">
+        Correct answers
+      </div>
+      <div class="progress-bar progress-bar-danger" role="progressbar" style="width:{{wrongAnswerInPercentage}}%">
+        Wrong answers
+      </div>
+      <div class="progress-bar progress-bar-warning" role="progressbar" style="width:{{(100-(scoreInPercentage+wrongAnswerInPercentage))}}%">
+        Not answerd
+      </div>
+    </div>
+  </div>
+</div>

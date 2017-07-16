@@ -1,0 +1,32 @@
+<!-- Test questions view -->
+<div class="container">
+  <h2 ng-bind="testDetails.testName">Online JavaScript Test.</h2>
+  <div class="box text-center lg-font text-lightseagreen">
+    <span class="glyphicon glyphicon-home pull-left hr-green" ui-sref="testLaunch"></span>
+    <span class="minor-Heading pull-left hr-green" ui-sref="testLaunch">{{candidateName}}</span>
+    <span class="glyphicon glyphicon-time rm-left-margin-md"></span>
+    <span class="">{{min}}:{{(seconds<10)? '0'+seconds : seconds }}</span>
+  </div>
+  <div class="wrapper" ng-class="{'top-padding-sm':  isError}">
+    <div class="alert alert-danger" ng-show="isError">
+       <strong>{{errorMessage}}!</strong> 
+   </div>
+    <div class="question-wrapper">
+      <div class="minor-Heading"><span> {{'Q. '+(currentQuestionIndex+1)+ ' '}}</span><span id="question"></span></div>
+      <div ng-repeat="option in currentQuestion.answerOptions">
+        <input type="checkbox" name="answer"  ng-click="setAnswer(option)" ng-checked="checkPreviouslySelected(option)"><span>{{' '+option}}</span>
+      </div>
+    </div>
+<div>
+  <a class="btn btn-default btn-sm sm-margin" 
+     ng-click="navigateQuestion(currentQuestionIndex - 1)" 
+     ng-disabled="currentQuestionIndex === 0">Previous</a>
+  <a class="btn btn-default btn-sm sm-margin" 
+    ng-click="navigateQuestion(currentQuestionIndex + 1)" 
+    ng-disabled="currentQuestionIndex === testData.questions.length-1">Next</a>   
+  <a class="btn btn-default btn-sm sm-margin pull-right" 
+    ng-click="submitAndCheckScore();showError('All questions are mandatory.')" 
+    ng-disabled="answers.length < testData.questions.length">Submit</a>   
+</div>
+  </div>
+</div>
